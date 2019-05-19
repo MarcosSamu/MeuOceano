@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<title>Meu oceano</title>
+</head>
+<style type="text/css">
+	*{margin:0;padding: 0;box-sizing: border-box;}
+
+	.background{background: url(back.jpg) center;height: 100vh;width: 100%;
+		background-size: cover;}
+
+
+
+</style>
+<body>
+	<div class="background">
+	</div>
+</body>
+<script src="jquery-3.4.1.min.js"></script>
+<script src="jquery.ripples-master/dist/jquery.ripples-min.js"></script>
+<script>
+	$('.background').ripples({
+	resolution: 512,
+	dropRadius: 20,
+	perturbance: 0.06,
+});
+</script>
+</html>
